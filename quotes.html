@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Quote Generator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h2 class="text-4xl text-center font-bold my-6">
-          JavaScript Quote Generator 🔂
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Quote Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="container bg-gray-100 min-h-screen flex flex-col justify-center items-center">
+  <div class="header">
+    <h2 class="text-4xl text-center font-bold my-6 text-purple-600">
+      JavaScript Quote Generator 🔂
+    </h2>
+  </div>
+  <div class="main content">
+    <div class="card w-96 mx-auto shadow-2xl relative bg-indigo-600 rounded-lg p-6 text-white">
+      <div class="card-body">
+        <p class="text-2xl font-semibold" id="quote">
+          <!-- Quote content -->
+        </p>
+        <h2 id="person" class="person text-xl text-red-500">
+          <!-- Person name -->
         </h2>
-      </div>
-      <div class="main content">
-        <div class="card w-96 mx-auto shadow-2xl relative">
-          <div class="card-body">
-            <p class="text-2xl font-semibold" id="quote">
-              <!-- Quote content -->
-            </p>
-            <h2 id="person" class="person text-xl text-red-500">
-              <!-- Person name -->
-            </h2>
-            <button id="quoteButton" class="btn btn-outline btn-primary mt-2 w-full">
-              New Quote
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      
+        <button id="quoteButton" class="btn btn-outline btn-primary mt-4 w-full bg-yellow-400 text-indigo-600 hover:bg-yellow-500">
+          New Quote
+        </button>
       </div>
     </div>
-    <script src="quotes.js"></script>
-  </body>
+  </div>
+</div>
+
+  
+
+  <script src="quotes.js"></script>
+</body>
+
 </html>
